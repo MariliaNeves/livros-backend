@@ -9,6 +9,12 @@ create table autor (
     nome varchar(40) not null
 );
 
+INSERT INTO autor (nome) VALUES ('Machado de Assis');
+INSERT INTO autor (nome) VALUES ('Clarice Lispector');
+INSERT INTO autor (nome) VALUES ('J. K. Rowling');
+INSERT INTO autor (nome) VALUES ('George Orwell');
+INSERT INTO autor (nome) VALUES ('J. R. R. Tolkien');
+
 create table assunto (
     id integer generated always as identity primary key,
     descricao varchar(20) not null

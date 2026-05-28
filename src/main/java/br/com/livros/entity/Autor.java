@@ -26,8 +26,8 @@ public class Autor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "codigo")
-    private Integer codigo;
+    @Column(name = "id")
+    private Integer id;
 
     @Column(name = "nome", nullable = false, length = 40)
     private String nome;
