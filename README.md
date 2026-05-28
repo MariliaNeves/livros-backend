@@ -12,9 +12,33 @@ API REST para cadastro e consulta de livros, autores, assuntos e relatorios.
 - Maven
 - JUnit 5 e Mockito
 - OpenAPI/Swagger UI
+- Docker
 
+## Executar com Docker
 
+Build da imagem:
 
+```bash
+docker build -t livros-backend .
+```
+
+Executar o container:
+
+```bash
+docker run --rm -p 8080:8080 --name livros-backend livros-backend
+```
+
+Com Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+Para parar:
+
+```bash
+docker compose down
+```
 
 ## Banco de dados
 
@@ -113,7 +137,5 @@ Criar livro:
   "assuntosIds": [1]
 }
 ```
-
-
 
 
