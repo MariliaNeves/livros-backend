@@ -1,5 +1,6 @@
 package br.com.livros.controller;
 
+import br.com.livros.dto.AssuntoResponse;
 import br.com.livros.entity.Assunto;
 import br.com.livros.service.AssuntoService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +20,7 @@ public class AssuntoController {
     }
 
     @GetMapping
-    public List<Assunto> listar(){
+    public List<AssuntoResponse> listar(){
         return assuntoService.listar();
     }
 }
