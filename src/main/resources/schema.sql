@@ -1,4 +1,9 @@
 
+
+
+
+
+
 create table autor (
     id integer generated always as identity primary key,
     nome varchar(40) not null
@@ -8,6 +13,12 @@ create table assunto (
     id integer generated always as identity primary key,
     descricao varchar(20) not null
 );
+
+INSERT INTO assunto (descricao) VALUES ('Romance');
+INSERT INTO assunto (descricao) VALUES ('Fantasia');
+INSERT INTO assunto (descricao) VALUES ('Ficcao');
+INSERT INTO assunto (descricao) VALUES ('Drama');
+INSERT INTO assunto (descricao) VALUES ('Aventura');
 
 create table livro (
     id integer generated always as identity primary key,
