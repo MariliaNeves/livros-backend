@@ -51,6 +51,35 @@ create table  livro_assunto (
     constraint fk_livro_assunto_assunto foreign key (assunto_id) references assunto (id)
 );
 
+INSERT INTO livro (titulo, editora, edicao, ano_publicacao, valor)
+VALUES ('Dom Casmurro', 'Editora A', 1, '1899', 39.90);
+
+INSERT INTO livro (titulo, editora, edicao, ano_publicacao, valor)
+VALUES ('A Hora da Estrela', 'Editora B', 2, '1977', 29.50);
+
+INSERT INTO livro (titulo, editora, edicao, ano_publicacao, valor)
+VALUES ('Harry Potter', 'Rocco', 1, '1997', 59.90);
+
+INSERT INTO livro (titulo, editora, edicao, ano_publicacao, valor)
+VALUES ('1984', 'Companhia das Letras', 3, '1949', 45.00);
+
+INSERT INTO livro (titulo, editora, edicao, ano_publicacao, valor)
+VALUES ('O Hobbit', 'HarperCollins', 2, '1937', 49.90);
+
+
+INSERT INTO livro_autor (livro_id, autor_id) VALUES (1, 1);
+INSERT INTO livro_autor (livro_id, autor_id) VALUES (2, 2);
+INSERT INTO livro_autor (livro_id, autor_id) VALUES (3, 3);
+INSERT INTO livro_autor (livro_id, autor_id) VALUES (4, 4);
+INSERT INTO livro_autor (livro_id, autor_id) VALUES (5, 5);
+
+
+INSERT INTO livro_assunto (livro_id, assunto_id) VALUES (1, 1);
+INSERT INTO livro_assunto (livro_id, assunto_id) VALUES (2, 4);
+INSERT INTO livro_assunto (livro_id, assunto_id) VALUES (3, 2);
+INSERT INTO livro_assunto (livro_id, assunto_id) VALUES (4, 3);
+INSERT INTO livro_assunto (livro_id, assunto_id) VALUES (5, 5);
+
 create view vm_livros_por_autor as
 select
 au.id as autor_id,
